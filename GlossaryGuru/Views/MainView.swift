@@ -38,7 +38,7 @@ struct MainView: View {
                         viewModel.filterWords(searchText: newWord)
                     }
                 List(viewModel.filteredWords) { word in
-                    NavigationLink(destination: WordDetailedView(word: word)) {
+                    NavigationLink(destination: WordDetailedView(word: word, viewModel: viewModel)) {
                         Text(word.word ?? "")
                     }
                 }
