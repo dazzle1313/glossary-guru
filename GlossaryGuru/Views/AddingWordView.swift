@@ -2,11 +2,8 @@ import SwiftUI
 import CoreData
 
 struct AddingWordView: View {
-    @StateObject private var viewModel: WordViewModel
-    
-    init(viewContext: NSManagedObjectContext) {
-        _viewModel = StateObject(wrappedValue: WordViewModel(viewContext: viewContext))
-    }
+    @StateObject var viewModel: WordViewModel
+    @Environment(\.presentationMode) var presentationMode
     
     @State private var word = ""
     @State private var translation = ""
@@ -46,6 +43,7 @@ struct AddingWordView: View {
                 Spacer()
                 Button(action: {
                     viewModel.addWord(word: word, translation: translation, transcription: transcription, definition: definition, page: Int(page) ?? 1)
+                    presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Сохранить")
                 }
@@ -56,5 +54,5 @@ struct AddingWordView: View {
 }
 
 #Preview {
-    AddingWordView(viewContext: PersistenceController.shared.container.viewContext)
+    AddingWordView(viewModel: WordViewModel(viewContext: PersistenceController.shared.container.viewContext))
 }

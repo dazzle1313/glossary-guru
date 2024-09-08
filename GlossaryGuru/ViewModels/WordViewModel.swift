@@ -7,6 +7,7 @@ final class WordViewModel: ObservableObject {
     private let viewContext: NSManagedObjectContext
     
     @Published var words: [Word] = []
+    @Published var filteredWords: [Word] = []
     
     init(viewContext: NSManagedObjectContext) {
         self.viewContext = viewContext
@@ -30,6 +31,7 @@ final class WordViewModel: ObservableObject {
         
         do {
             words = try viewContext.fetch(request)
+            filteredWords = words
         } catch {
             print("There is an error while fetching the words: \(error.localizedDescription)")
         }
@@ -41,6 +43,16 @@ final class WordViewModel: ObservableObject {
             fetchWords()
         } catch {
             print("There is an error while saving context: \(error.localizedDescription)")
+        }
+    }
+    
+    func filterWords(searchText: String) {
+        if !searchText.isEmpty {
+            filteredWords = words.filter { word in
+                word.word?.localizedCaseInsensitiveContains(searchText) ?? false
+            }
+        } else {
+            filteredWords = words
         }
     }
     
