@@ -8,6 +8,7 @@ final class WordViewModel: ObservableObject {
     
     @Published var words: [Word] = []
     @Published var filteredWords: [Word] = []
+    @Published var wordsByPage: [Word] = []
     
     init(viewContext: NSManagedObjectContext) {
         self.viewContext = viewContext
@@ -54,6 +55,19 @@ final class WordViewModel: ObservableObject {
         } else {
             filteredWords = words
         }
+    }
+    
+    func filterWordsByPage(pageNumber: String) {
+        if let page = Int32(pageNumber) {
+            wordsByPage = words.filter { word in
+                word.page == page
+            }
+        }
+    }
+    
+    func deleteWord(word: Word) {
+        viewContext.delete(word)
+        saveContext()
     }
     
 }

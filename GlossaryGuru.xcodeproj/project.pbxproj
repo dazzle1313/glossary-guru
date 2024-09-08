@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E907B10A2C8E192B009BBD71 /* WordDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E907B1092C8E192B009BBD71 /* WordDetailedView.swift */; };
 		E9C10D9C2C8DF97700F3BB7B /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C10D9B2C8DF97700F3BB7B /* WordViewModel.swift */; };
 		E9C10DA02C8DFD0C00F3BB7B /* AddingWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C10D9F2C8DFD0C00F3BB7B /* AddingWordView.swift */; };
 		E9C10DA22C8E0E2500F3BB7B /* WordsOfPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C10DA12C8E0E2500F3BB7B /* WordsOfPageView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E907B1092C8E192B009BBD71 /* WordDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailedView.swift; sourceTree = "<group>"; };
 		E9C10D9B2C8DF97700F3BB7B /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		E9C10D9F2C8DFD0C00F3BB7B /* AddingWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingWordView.swift; sourceTree = "<group>"; };
 		E9C10DA12C8E0E2500F3BB7B /* WordsOfPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsOfPageView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				E9DE94C92C8DC22100DE9EC2 /* MainView.swift */,
 				E9C10D9F2C8DFD0C00F3BB7B /* AddingWordView.swift */,
 				E9C10DA12C8E0E2500F3BB7B /* WordsOfPageView.swift */,
+				E907B1092C8E192B009BBD71 /* WordDetailedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				E9C10D9C2C8DF97700F3BB7B /* WordViewModel.swift in Sources */,
 				E9DE94D42C8DC22200DE9EC2 /* GlossaryGuru.xcdatamodeld in Sources */,
 				E9DE94D12C8DC22200DE9EC2 /* Persistence.swift in Sources */,
+				E907B10A2C8E192B009BBD71 /* WordDetailedView.swift in Sources */,
 				E9DE94CA2C8DC22100DE9EC2 /* MainView.swift in Sources */,
 				E9C10DA22C8E0E2500F3BB7B /* WordsOfPageView.swift in Sources */,
 				E9DE94C82C8DC22100DE9EC2 /* GlossaryGuruApp.swift in Sources */,

@@ -7,10 +7,12 @@ struct WordsOfPageView: View {
     
     var body: some View {
         VStack {
-            TextField("Введите номер страницы", text: $pageNumber)
+            TextField("Введите номер страницы", text: $pageNumber, onEditingChanged: { _ in
+                viewModel.filterWordsByPage(pageNumber: pageNumber)
+            })
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-            List(viewModel.words) { word in
+            List(viewModel.wordsByPage) { word in
                 Text("\(word.word ?? "") - \(word.translation ?? "")")
             }
         }
