@@ -6,6 +6,8 @@ final class WordViewModel: ObservableObject {
     
     private let viewContext: NSManagedObjectContext
     
+    @AppStorage("lastPageNumber") private var lastPageNumber: Int = 1
+    
     @Published var words: [Word] = []
     @Published var filteredWords: [Word] = []
     @Published var wordsByPage: [Word] = []
@@ -25,6 +27,8 @@ final class WordViewModel: ObservableObject {
         newWord.page = Int32(page)
         
         saveContext()
+        
+        lastPageNumber = page
     }
     
     private func fetchWords() {

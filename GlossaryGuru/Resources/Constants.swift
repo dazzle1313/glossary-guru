@@ -18,10 +18,12 @@ final class Constants {
         static let placeholder = Color("placeholder")
         static let lightPink = Color("light-pink")
         static let pink = Color("pink")
+        static let gray = Color("gray")
     }
     
     enum Icons {
         static let searching = Image("searching")
         static let book = Image("book")
+        static let backButton = Image("back-button")
     }
 }

@@ -8,8 +8,6 @@ struct GlossaryGuruApp: App {
         WindowGroup {
             MainView(viewContext: persistenceController.container.viewContext)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
-//            AddingWordView(viewContext: persistenceController.container.viewContext)
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
