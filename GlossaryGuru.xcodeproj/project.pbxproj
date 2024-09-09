@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E907B10A2C8E192B009BBD71 /* WordDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E907B1092C8E192B009BBD71 /* WordDetailedView.swift */; };
+		E926FFBF2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E926FFBD2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Regular.otf */; };
+		E926FFC02C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E926FFBE2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Medium.otf */; };
+		E926FFC22C8ED896006AEA11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926FFC12C8ED896006AEA11 /* Constants.swift */; };
 		E9C10D9C2C8DF97700F3BB7B /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C10D9B2C8DF97700F3BB7B /* WordViewModel.swift */; };
 		E9C10DA02C8DFD0C00F3BB7B /* AddingWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C10D9F2C8DFD0C00F3BB7B /* AddingWordView.swift */; };
 		E9C10DA22C8E0E2500F3BB7B /* WordsOfPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C10DA12C8E0E2500F3BB7B /* WordsOfPageView.swift */; };
@@ -21,6 +24,10 @@
 
 /* Begin PBXFileReference section */
 		E907B1092C8E192B009BBD71 /* WordDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailedView.swift; sourceTree = "<group>"; };
+		E926FFBB2C8ED747006AEA11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E926FFBD2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GT-Pressura-LC-Standard-Regular.otf"; path = "../../../../../Library/Fonts/GT-Pressura-LC-Standard-Regular.otf"; sourceTree = "<group>"; };
+		E926FFBE2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GT-Pressura-LC-Standard-Medium.otf"; path = "../../../../../Library/Fonts/GT-Pressura-LC-Standard-Medium.otf"; sourceTree = "<group>"; };
+		E926FFC12C8ED896006AEA11 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E9C10D9B2C8DF97700F3BB7B /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		E9C10D9F2C8DFD0C00F3BB7B /* AddingWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingWordView.swift; sourceTree = "<group>"; };
 		E9C10DA12C8E0E2500F3BB7B /* WordsOfPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsOfPageView.swift; sourceTree = "<group>"; };
@@ -44,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E926FFBC2C8ED767006AEA11 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E926FFBE2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Medium.otf */,
+				E926FFBD2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		E9C10D952C8DCD8500F3BB7B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +83,9 @@
 		E9C10D972C8DCE2D00F3BB7B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E926FFBC2C8ED767006AEA11 /* Fonts */,
 				E9DE94CB2C8DC22200DE9EC2 /* Assets.xcassets */,
+				E926FFC12C8ED896006AEA11 /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -100,6 +118,7 @@
 		E9DE94C62C8DC22100DE9EC2 /* GlossaryGuru */ = {
 			isa = PBXGroup;
 			children = (
+				E926FFBB2C8ED747006AEA11 /* Info.plist */,
 				E9C10D952C8DCD8500F3BB7B /* ViewModels */,
 				E9C10D962C8DCD8E00F3BB7B /* Views */,
 				E9DE94CD2C8DC22200DE9EC2 /* Preview Content */,
@@ -177,6 +196,8 @@
 			files = (
 				E9DE94CF2C8DC22200DE9EC2 /* Preview Assets.xcassets in Resources */,
 				E9DE94CC2C8DC22200DE9EC2 /* Assets.xcassets in Resources */,
+				E926FFC02C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Medium.otf in Resources */,
+				E926FFBF2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +216,7 @@
 				E9DE94CA2C8DC22100DE9EC2 /* MainView.swift in Sources */,
 				E9C10DA22C8E0E2500F3BB7B /* WordsOfPageView.swift in Sources */,
 				E9DE94C82C8DC22100DE9EC2 /* GlossaryGuruApp.swift in Sources */,
+				E926FFC22C8ED896006AEA11 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +353,7 @@
 				DEVELOPMENT_TEAM = 5Z4M57H9F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GlossaryGuru/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -360,6 +383,7 @@
 				DEVELOPMENT_TEAM = 5Z4M57H9F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GlossaryGuru/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
