@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E907B10A2C8E192B009BBD71 /* WordDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E907B1092C8E192B009BBD71 /* WordDetailedView.swift */; };
 		E9199B392C90994200037E06 /* DefinitionInfoBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9199B382C90994200037E06 /* DefinitionInfoBlock.swift */; };
+		E9199B3B2C90A38D00037E06 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9199B3A2C90A38D00037E06 /* Error.swift */; };
 		E926FFBF2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E926FFBD2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Regular.otf */; };
 		E926FFC02C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E926FFBE2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Medium.otf */; };
 		E926FFC22C8ED896006AEA11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926FFC12C8ED896006AEA11 /* Constants.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		E907B1092C8E192B009BBD71 /* WordDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailedView.swift; sourceTree = "<group>"; };
 		E9199B382C90994200037E06 /* DefinitionInfoBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionInfoBlock.swift; sourceTree = "<group>"; };
+		E9199B3A2C90A38D00037E06 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		E926FFBB2C8ED747006AEA11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E926FFBD2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GT-Pressura-LC-Standard-Regular.otf"; path = "../../../../../Library/Fonts/GT-Pressura-LC-Standard-Regular.otf"; sourceTree = "<group>"; };
 		E926FFBE2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GT-Pressura-LC-Standard-Medium.otf"; path = "../../../../../Library/Fonts/GT-Pressura-LC-Standard-Medium.otf"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				E9DE94D22C8DC22200DE9EC2 /* GlossaryGuru.xcdatamodeld */,
 				E9D16F1E2C8F6AC100765A12 /* WordInfoBlock.swift */,
 				E9199B382C90994200037E06 /* DefinitionInfoBlock.swift */,
+				E9199B3A2C90A38D00037E06 /* Error.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				E9199B392C90994200037E06 /* DefinitionInfoBlock.swift in Sources */,
 				E9C10DA02C8DFD0C00F3BB7B /* AddingWordView.swift in Sources */,
 				E9C10D9C2C8DF97700F3BB7B /* WordViewModel.swift in Sources */,
+				E9199B3B2C90A38D00037E06 /* Error.swift in Sources */,
 				E9DE94D42C8DC22200DE9EC2 /* GlossaryGuru.xcdatamodeld in Sources */,
 				E9D16F1F2C8F6AC100765A12 /* WordInfoBlock.swift in Sources */,
 				E9DE94D12C8DC22200DE9EC2 /* Persistence.swift in Sources */,

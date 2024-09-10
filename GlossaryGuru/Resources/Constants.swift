@@ -26,4 +26,8 @@ final class Constants {
         static let book = Image("book")
         static let backButton = Image("back-button")
     }
+    
+    enum Errors {
+        static let emptyError = Image("error-empty")
+    }
 }
