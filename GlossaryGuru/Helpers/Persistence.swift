@@ -1,10 +1,3 @@
-//
-//  Persistence.swift
-//  GlossaryGuru
-//
-//  Created by Павел Кириллов on 08.09.2024.
-//
-
 import CoreData
 
 struct PersistenceController {

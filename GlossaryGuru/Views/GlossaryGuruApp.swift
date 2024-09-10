@@ -6,7 +6,7 @@ struct GlossaryGuruApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView(viewContext: persistenceController.container.viewContext)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
