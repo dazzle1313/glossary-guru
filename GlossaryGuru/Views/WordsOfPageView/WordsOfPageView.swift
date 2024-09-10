@@ -13,6 +13,7 @@ struct WordsOfPageView: View {
                 HStack {
                     Button(action: {
                         presentationMode.wrappedValue.dismiss()
+                        viewModel.wordsByPage.removeAll()
                     }) {
                         Constants.Icons.backButton
                     }
@@ -35,14 +36,22 @@ struct WordsOfPageView: View {
             .background(RoundedRectangle(cornerRadius: 12).fill(Constants.Colors.backgroundGray).frame(height: 56))
             .padding(.horizontal, 24)
             .padding(.vertical, 16)
-            List(viewModel.wordsByPage) { word in
-                Text("\(word.word ?? "") - \(word.translation ?? "")")
-                    .font(Constants.Fonts.mainFont(size: 18))
-                    .padding(.bottom, 8)
-                    .padding(.top, 12)
+            
+            if !viewModel.wordsByPage.isEmpty {
+                List(viewModel.wordsByPage) { word in
+                    Text("\(word.word ?? "") - \(word.translation ?? "")")
+                        .font(Constants.Fonts.mainFont(size: 18))
+                        .padding(.bottom, 8)
+                        .padding(.top, 12)
+                }
+                .listStyle(PlainListStyle())
+                .padding(.leading, 8)
+            } else {
+                Spacer()
+                Error(errorType: .empty)
+                Spacer()
             }
-            .listStyle(PlainListStyle())
-            .padding(.leading, 8)
+            
         }
         .navigationBarHidden(true)
     }
