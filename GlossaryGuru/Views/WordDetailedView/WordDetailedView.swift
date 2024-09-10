@@ -65,7 +65,7 @@ struct WordDetailedView: View {
                 .disabled(true)
             WordInfoBlock(label: "Номер страницы", placeholder: "", text: pageTextBinding)
                 .disabled(true)
-            WordInfoBlock(label: "Описание", placeholder: "", text: definitionTextBinding)
+            DefinitionInfoBlock(label: "Описание", text: definitionTextBinding)
                 .disabled(true)
         }
         Spacer()

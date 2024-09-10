@@ -24,7 +24,11 @@ struct PageCounter: View {
                         RoundedRectangle(cornerRadius: 10)
                             .frame(width: 56, height: 56)
                             .foregroundStyle(Color.clear)
-                            .border(Constants.Colors.gray, width: 1)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Constants.Colors.gray, lineWidth: 1)
+                                    .foregroundStyle(Constants.Colors.white)
+                            )
                         Image(systemName: "minus")
                             .foregroundStyle(Constants.Colors.black)
                     }
@@ -50,7 +54,11 @@ struct PageCounter: View {
                         RoundedRectangle(cornerRadius: 10)
                             .frame(width: 56, height: 56)
                             .foregroundStyle(Color.clear)
-                            .border(Constants.Colors.gray, width: 1)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Constants.Colors.gray, lineWidth: 1)
+                                    .foregroundStyle(Constants.Colors.white)
+                            )
                         Image(systemName: "plus")
                             .foregroundStyle(Constants.Colors.black)
                     }
