@@ -10,8 +10,6 @@
 		E907B10A2C8E192B009BBD71 /* WordDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E907B1092C8E192B009BBD71 /* WordDetailedView.swift */; };
 		E9199B392C90994200037E06 /* DefinitionInfoBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9199B382C90994200037E06 /* DefinitionInfoBlock.swift */; };
 		E9199B3B2C90A38D00037E06 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9199B3A2C90A38D00037E06 /* Error.swift */; };
-		E926FFBF2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E926FFBD2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Regular.otf */; };
-		E926FFC02C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E926FFBE2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Medium.otf */; };
 		E926FFC22C8ED896006AEA11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926FFC12C8ED896006AEA11 /* Constants.swift */; };
 		E9C10D9C2C8DF97700F3BB7B /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C10D9B2C8DF97700F3BB7B /* WordViewModel.swift */; };
 		E9C10DA02C8DFD0C00F3BB7B /* AddingWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C10D9F2C8DFD0C00F3BB7B /* AddingWordView.swift */; };
@@ -24,6 +22,8 @@
 		E9DE94CF2C8DC22200DE9EC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9DE94CE2C8DC22200DE9EC2 /* Preview Assets.xcassets */; };
 		E9DE94D12C8DC22200DE9EC2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DE94D02C8DC22200DE9EC2 /* Persistence.swift */; };
 		E9DE94D42C8DC22200DE9EC2 /* GlossaryGuru.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9DE94D22C8DC22200DE9EC2 /* GlossaryGuru.xcdatamodeld */; };
+		E9F94ACD2CD7800300E8C0F1 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9F94ACB2CD7800300E8C0F1 /* Lato-Regular.ttf */; };
+		E9F94ACE2CD7800300E8C0F1 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9F94ACC2CD7800300E8C0F1 /* Lato-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +31,6 @@
 		E9199B382C90994200037E06 /* DefinitionInfoBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionInfoBlock.swift; sourceTree = "<group>"; };
 		E9199B3A2C90A38D00037E06 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		E926FFBB2C8ED747006AEA11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		E926FFBD2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GT-Pressura-LC-Standard-Regular.otf"; path = "../../../../../Library/Fonts/GT-Pressura-LC-Standard-Regular.otf"; sourceTree = "<group>"; };
-		E926FFBE2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GT-Pressura-LC-Standard-Medium.otf"; path = "../../../../../Library/Fonts/GT-Pressura-LC-Standard-Medium.otf"; sourceTree = "<group>"; };
 		E926FFC12C8ED896006AEA11 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E9C10D9B2C8DF97700F3BB7B /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		E9C10D9F2C8DFD0C00F3BB7B /* AddingWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingWordView.swift; sourceTree = "<group>"; };
@@ -46,6 +44,8 @@
 		E9DE94CE2C8DC22200DE9EC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9DE94D02C8DC22200DE9EC2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		E9DE94D32C8DC22200DE9EC2 /* GlossaryGuru.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GlossaryGuru.xcdatamodel; sourceTree = "<group>"; };
+		E9F94ACB2CD7800300E8C0F1 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		E9F94ACC2CD7800300E8C0F1 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,8 @@
 		E926FFBC2C8ED767006AEA11 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				E926FFBE2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Medium.otf */,
-				E926FFBD2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Regular.otf */,
+				E9F94ACC2CD7800300E8C0F1 /* Lato-Bold.ttf */,
+				E9F94ACB2CD7800300E8C0F1 /* Lato-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -239,9 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9DE94CF2C8DC22200DE9EC2 /* Preview Assets.xcassets in Resources */,
+				E9F94ACE2CD7800300E8C0F1 /* Lato-Bold.ttf in Resources */,
 				E9DE94CC2C8DC22200DE9EC2 /* Assets.xcassets in Resources */,
-				E926FFC02C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Medium.otf in Resources */,
-				E926FFBF2C8ED7F5006AEA11 /* GT-Pressura-LC-Standard-Regular.otf in Resources */,
+				E9F94ACD2CD7800300E8C0F1 /* Lato-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

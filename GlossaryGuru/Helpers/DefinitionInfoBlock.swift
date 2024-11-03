@@ -11,15 +11,26 @@ struct DefinitionInfoBlock: View {
                     .font(Constants.Fonts.mainFontBold(size: 24))
                 Spacer()
             }
-            TextEditor(text: $text)
-                .padding(.horizontal, 16)
-                .font(Constants.Fonts.mainFont(size: 20))
-                .frame(height: 90)
-                .background(
-                    RoundedRectangle(cornerRadius: 8)
-                        .strokeBorder(Constants.Colors.gray, lineWidth: 1)
-                )
-                .textEditorStyle(PlainTextEditorStyle())
+            if #available(iOS 17.0, *) {
+                TextEditor(text: $text)
+                    .padding(.horizontal, 16)
+                    .font(Constants.Fonts.mainFont(size: 20))
+                    .frame(height: 90)
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .strokeBorder(Constants.Colors.gray, lineWidth: 1)
+                    )
+                    .textEditorStyle(PlainTextEditorStyle())
+            } else {
+                TextEditor(text: $text)
+                    .padding(.horizontal, 16)
+                    .font(Constants.Fonts.mainFont(size: 20))
+                    .frame(height: 90)
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .strokeBorder(Constants.Colors.gray, lineWidth: 1)
+                    )
+            }
         }
         .padding(.horizontal, 24)
     }
