@@ -3,11 +3,11 @@ import SwiftUI
 final class Constants {
     enum Fonts {
         static func mainFont(size: CGFloat) -> Font {
-            return Font.custom("GT Pressura LC", size: size)
+            return Font.custom("Lato Regular", size: size)
         }
         
         static func mainFontBold(size: CGFloat) -> Font {
-            return Font.custom("GT Pressura LC Medium", size: size)
+            return Font.custom("Lato Bold", size: size)
         }
     }
     

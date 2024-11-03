@@ -4,8 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>GT-Pressura-LC-Standard-Regular.otf</string>
-		<string>GT-Pressura-LC-Standard-Medium.otf</string>
+		<string>Lato-Bold.ttf</string>
+		<string>Lato-Regular.ttf</string>
 	</array>
 </dict>
 </plist>
